@@ -1,0 +1,38 @@
+.bg-basic {
+  background-color: rgb(142, 200, 247);
+}
+
+.bg-important {
+  background-color: rgb(43, 110, 253);
+}
+
+.bg-warning {
+  background-color: rgb(0, 255, 213);
+}
+
+.primary-font {
+  font-family: "Lucida Sans";
+}
+
+.secondary-font {
+  font-family: "Gill Sans";
+}
+
+.shadow {
+  box-shadow: 5px 5px 15px #000;
+}
+
+body {
+  margin: 50px;
+  padding: 0;
+}
+body .box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+/*# sourceMappingURL=style.css.map */

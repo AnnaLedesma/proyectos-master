@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body .card {
+  width: 300px;
+  margin: 8px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 50px 75px;
+  grid-template-areas: "img" "description" "date" "btn";
+  border: 0.1px solid #444444;
+}
+body .card--img {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+}
+body .card--text {
+  grid-area: description;
+  padding: 8px;
+  color: #444444;
+}
+body .card--text h3 {
+  margin: 8px 0 8px;
+}
+body .card--date {
+  grid-area: date;
+  display: grid;
+  justify-content: end;
+  margin: 8px;
+}
+body .card--date p {
+  font-size: 15px;
+  color: #444444;
+}
+body .card--date p span {
+  color: rgb(117, 189, 231);
+}
+body .card--btn {
+  grid-area: btn;
+  background-color: rgb(117, 189, 231);
+  font-size: 20px;
+  color: #fff;
+  border-radius: 2px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+@use "responsive";
+
+$bg-color: rgb(155, 214, 241);
+$color: #000;
+$bg-hover: rgb(84, 84, 194);
+$color-hover: #fff;
+
+body {
+  margin: 0;
+  padding: 0;
+
+  .menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    
+    .menu-item{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 10px;
+      background-color: $bg-color;
+      color: $color;
+      list-style-type: none;
+      
+      &:hover {
+        background-color: $bg-hover;
+        color: $color-hover;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+$color-basic: rgb(247, 142, 142);
+$color-important: rgb(253, 67, 43);
+$color-warning: rgb(109, 0, 0);
+$color-shadow: #000;
+
+$primary: 'Times New Roman';
+$secondary: fantasy;
+
+.bg-basic {
+  background-color: $color-basic;
+}
+
+.bg-important {
+  background-color: $color-important;
+}
+
+.bg-warning {
+  background-color: $color-warning;
+}
+
+.primary-font {
+  font-family: $primary;
+}
+
+.secondary-font {
+  font-family: $secondary;
+}
+
+.shadow {
+  box-shadow: 5px 5px 15px $color-shadow;
+}

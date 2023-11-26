@@ -1,0 +1,63 @@
+@use "_variables" as *;
+
+body {
+  margin: 0;
+  padding: 0;
+
+    .card {
+      width: 300px;
+      margin: 8px;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 50px 75px;
+      grid-template-areas: 
+        "img"
+        "description"
+        "date"
+        "btn";
+      border: .1px solid $primary-color;
+  
+      &--img {
+        grid-area: img;
+        width: 100%;
+        height: 100%
+      }
+
+      &--text {
+        grid-area: description;
+        padding: 8px;
+        color: $primary-color;
+
+        h3 {
+          margin: 8px 0 8px;
+        }
+      }
+      
+      &--date {
+        grid-area: date;
+        display: grid;
+        justify-content: end;
+        margin: 8px;
+
+        p {
+          font-size: $small-font;
+          color: $primary-color;
+
+          span {
+            color: $btn-color;
+          }
+        }
+      }
+
+      &--btn {
+        grid-area: btn;
+        background-color: $btn-color;
+        font-size: $large-font;
+        color: $secondary-color;
+        border-radius: 2px;
+        margin: 8px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+}

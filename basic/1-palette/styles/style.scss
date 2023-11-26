@@ -1,0 +1,42 @@
+@use "_variables" as *;
+@use "_mixin" as *;
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+    
+    .box {     
+      width: $box-width;
+      height: $box-height;
+      border-radius: 5px;
+      
+      & .color-box-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        color: $color-font;
+      }
+    }
+      
+    &--1 {
+        @include colors($color-primary);
+    }
+    
+    &--2 {
+      @include colors($color-secondary);
+    }
+    
+    &--3 {
+      @include colors($color-tertiary);
+    }
+  }
+}

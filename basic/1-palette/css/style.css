@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+body .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0;
+}
+body .container .box {
+  width: 75px;
+  height: 100px;
+  border-radius: 5px;
+}
+body .container .box .color-box-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+body .container--1 .base-color {
+  background-color: blue;
+}
+body .container--1 .darken-1 {
+  background-color: #0000d6;
+}
+body .container--1 .darken-2 {
+  background-color: #0000ad;
+}
+body .container--1 .darken-3 {
+  background-color: #000085;
+}
+body .container--1 .darken-4 {
+  background-color: #00005c;
+}
+body .container--1 .lighten-1 {
+  background-color: #2929ff;
+}
+body .container--1 .lighten-2 {
+  background-color: #5252ff;
+}
+body .container--1 .lighten-3 {
+  background-color: #7a7aff;
+}
+body .container--1 .lighten-4 {
+  background-color: #a3a3ff;
+}
+body .container--2 .base-color {
+  background-color: #3c1388;
+}
+body .container--2 .darken-1 {
+  background-color: #2c0e64;
+}
+body .container--2 .darken-2 {
+  background-color: #1c0940;
+}
+body .container--2 .darken-3 {
+  background-color: #0d041d;
+}
+body .container--2 .darken-4 {
+  background-color: black;
+}
+body .container--2 .lighten-1 {
+  background-color: #4c18ac;
+}
+body .container--2 .lighten-2 {
+  background-color: #5c1dd0;
+}
+body .container--2 .lighten-3 {
+  background-color: #7033e2;
+}
+body .container--2 .lighten-4 {
+  background-color: #8957e7;
+}
+body .container--3 .base-color {
+  background-color: red;
+}
+body .container--3 .darken-1 {
+  background-color: #d60000;
+}
+body .container--3 .darken-2 {
+  background-color: #ad0000;
+}
+body .container--3 .darken-3 {
+  background-color: #850000;
+}
+body .container--3 .darken-4 {
+  background-color: #5c0000;
+}
+body .container--3 .lighten-1 {
+  background-color: #ff2929;
+}
+body .container--3 .lighten-2 {
+  background-color: #ff5252;
+}
+body .container--3 .lighten-3 {
+  background-color: #ff7a7a;
+}
+body .container--3 .lighten-4 {
+  background-color: #ffa3a3;
+}
+
+/*# sourceMappingURL=style.css.map */

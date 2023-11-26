@@ -1,0 +1,24 @@
+@mixin colors($base-color) {
+
+    .base-color {
+        background-color: $base-color;
+      }
+    
+      $darken-boxe: 4;
+      $darken: 8;
+    
+      @for $i from 1 through $darken-boxe {
+        .darken-#{$i} {
+          background-color: darken($base-color, $i * $darken);
+        }
+      }
+    
+      $lighten-box: 4;
+      $lighten: 8;
+    
+      @for $i from 1 through $lighten-box {
+        .lighten-#{$i} {
+          background-color: lighten($base-color, $i * $lighten);
+        }
+      }
+}
