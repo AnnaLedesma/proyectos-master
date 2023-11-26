@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body header {
+  height: 75px;
+  width: 100%;
+}
+body header .toolbar {
+  height: 30%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+body header .page-title {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  align-items: center;
+  height: 60%;
+  background-color: #d6cd51;
+  color: #fff;
+  font-size: 18px;
+}
+body .page-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "container list";
+  background-color: #dbd3d3;
+  flex: 1;
+}
+body .page-container nav {
+  grid-area: container;
+  background-color: rgb(51, 49, 17);
+}
+body .page-container nav .menu-container {
+  position: sticky;
+  top: 0;
+}
+body .page-container nav .menu-container .menu-title, body .page-container nav .menu-container ul li {
+  color: #fff;
+  text-transform: uppercase;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+body .page-container nav .menu-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+body .page-container nav .menu-container ul li {
+  justify-content: flex-start;
+  background-color: #fcfdbc;
+  color: #000;
+  text-transform: none;
+  border-bottom: 1px solid rgb(51, 49, 17);
+  cursor: pointer;
+}
+body .page-container nav .menu-container ul li:hover {
+  background-color: #d6cd51;
+}
+body .page-container main {
+  grid-area: list;
+}
+body .page-container main .list {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  background-color: #dbd3d3;
+}
+body .page-container main .list .card {
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+body .page-container main .list .card img {
+  border-radius: 50%;
+}
+body .page-container main .list .card .member-name {
+  padding: 10px 5px;
+}
+body footer {
+  padding-left: 10px;
+  height: 25px;
+  background-color: #fcfdbc;
+}
+
+@media screen and (max-width: 768px) {
+  body header .toolbar {
+    display: none;
+  }
+  body header .page-title {
+    height: 100%;
+  }
+  body .page-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "container" "list";
+  }
+  body .page-container nav {
+    position: sticky;
+    top: 0;
+  }
+  body .page-container nav .menu-container {
+    height: 100%;
+    position: sticky;
+    top: 0;
+  }
+  body .page-container nav .menu-container .menu-title, body .page-container nav .menu-container ul li {
+    display: none;
+    height: 100%;
+  }
+  body .page-container nav .menu-container ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body .page-container nav .menu-container ul li {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+  }
+  body .page-container main .list .card {
+    width: 90%;
+    margin-bottom: 2px;
+    border: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
